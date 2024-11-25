@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbc2eb; /* Fallback color */
+}
+
+.container {
+    padding-top: 65px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    color: #990078;
+    animation: fadeIn 3s ease;
+    background: url('https://wallpapers.com/images/featured/dora-the-explorer-uqhuubsa7dklyeos.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal-btn {
+    background: #fff;
+    color: #001cb9;
+    font-size: 200px;
+    border:5px solid rgb(255, 12, 215);
+    text-size-adjust: 100%;
+    font-style: italic;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.reveal-btn:hover {
+    transform: scale(1.1);
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales proportionally */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}
+
+.fullscreen-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
